@@ -1,0 +1,56 @@
+@URL_LOCAL = http://localhost:3000
+
+### ==========================================
+### 1. TESTE DE STATUS DA API
+### ==========================================
+GET {{URL_LOCAL}}/
+
+### ==========================================
+### 2. CADASTRO DE USUÁRIOS (3 Usuários)
+### ==========================================
+
+### 2.1. Cadastrar Usuário 1
+POST {{URL_LOCAL}}/usuario
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "email": "joao@gmail.com",
+  "senha": "123"
+}
+
+### 2.2. Cadastrar Usuário 2
+POST {{URL_LOCAL}}/usuario
+Content-Type: application/json
+
+{
+  "nome": "Larissa",
+  "email": "larissa@gmail.com",
+  "senha": "456"
+}
+
+### ==========================================
+### 3. LOGIN DE USUÁRIO 
+### ==========================================
+POST {{URL_LOCAL}}/login
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "email": "joao@gmail.com",
+  "senha": "123"
+}
+
+### ==========================================
+### 4. LISTAR DE USUÁRIOS 
+### ==========================================
+
+GET {{URL_LOCAL}}/usuarios?statusLog=true
+Content-Type: application/json
+
+### ==========================================
+### 4.2 LISTAR DE USUÁRIOS SEM LOG
+### ==========================================
+
+GET {{URL_LOCAL}}/usuarios
+Content-Type: application/json
