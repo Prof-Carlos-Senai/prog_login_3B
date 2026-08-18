@@ -47,3 +47,33 @@ th, td, th {
     text-align: center;
     color: white;
 }
+
+.card{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 16px;
+    padding: 8px;
+    text-align:left;
+    font-family: 'Segoe UI';
+    color: white;
+    width: 200px;
+    margin-left: 100px;
+}
+
+.card h2{
+    color: rgb(67, 152, 249);
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    padding: 4px;
+    text-align: center;
+}
+
+.card p{
+    margin-left: 12px;
+    font-size: 1.2rem;
+}
+
+.card strong{
+    color: white;
+    font-weight: bold;
+}
