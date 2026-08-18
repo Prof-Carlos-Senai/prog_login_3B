@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/config.js"></script>
+    <script src="../js/cadastroUsuario.js"defer></script>
+    <title>Sistema do Banco</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>&emsp;
+            <a>Usuario</a>&emsp;
+            <a href="./cadastroUsuario.html">Cadastrar</a>&emsp;
+            <a href="./consultarUsuario.html">Consultar</a>&emsp;
+            <a href="./listarUsuario.html">Listar</a>&emsp;
+            <br><br><hr>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Nome do Usuário</label><br>
+            <input type="text" id="nome" placeholder="nome" required><br>
+
+            <label for="email">Email do Usuário</label><br>
+            <input type="text" id="email" placeholder="email" required><br>
+
+            <label for="senha">Senha do Usuário</label><br>
+            <input type="text" id="senha" placeholder="senha" required><br><br>
+            <button type="submit" id="btn_cadastrar">Cadastrar</button><br><br>
+        </form>
+        <div id="resposta"></div>
+    </main>
+</body>
+</html>
